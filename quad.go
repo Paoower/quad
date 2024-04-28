@@ -4,7 +4,9 @@ import "github.com/01-edu/z01"
 
 func QuadA(x, y int) {
 	// print first line
-	PrintLine(x, 'o', 'o', '-')
+	if x > 0 && y > 0 {
+		PrintLine(x, 'o', 'o', '-')
+	}
 	// print intermediate lines
 	for i := 0; i < y-2; i++ {
 		PrintIntermediateLine(x, '|')
@@ -17,7 +19,9 @@ func QuadA(x, y int) {
 
 func QuadB(x, y int) {
 	// print first line
-	PrintLine(x, '/', 92, '*')
+	if x > 0 && y > 0 {
+		PrintLine(x, '/', 92, '*')
+	}
 	// print intermediate lines
 	for i := 0; i < y-2; i++ {
 		PrintIntermediateLine(x, '*')
@@ -30,7 +34,9 @@ func QuadB(x, y int) {
 
 func QuadC(x, y int) {
 	// print first line
-	PrintLine(x, 'A', 'A', 'B')
+	if x > 0 && y > 0 {
+		PrintLine(x, 'A', 'A', 'B')
+	}
 	// print intermediate lines
 	for i := 0; i < y-2; i++ {
 		PrintIntermediateLine(x, 'B')
@@ -43,7 +49,9 @@ func QuadC(x, y int) {
 
 func QuadD(x, y int) {
 	// print first line
-	PrintLine(x, 'A', 'C', 'B')
+	if x > 0 && y > 0 {
+		PrintLine(x, 'A', 'C', 'B')
+	}
 	// print intermediate lines
 	for i := 0; i < y-2; i++ {
 		PrintIntermediateLine(x, 'B')
@@ -56,7 +64,9 @@ func QuadD(x, y int) {
 
 func QuadE(x, y int) {
 	// print first line
-	PrintLine(x, 'A', 'C', 'B')
+	if x > 0 && y > 0 {
+		PrintLine(x, 'A', 'C', 'B')
+	}
 	// print intermediate lines
 	for i := 0; i < y-2; i++ {
 		PrintIntermediateLine(x, 'B')
@@ -67,13 +77,13 @@ func QuadE(x, y int) {
 	}
 }
 
-func PrintLine(x int, firstEdge, lastEdge, inter rune) {
-	z01.PrintRune(firstEdge)
+func PrintLine(x int, leftCorner, rightCorner, inter rune) {
+	z01.PrintRune(leftCorner)
 	if x > 1 {
 		for i := 0; i < x-2; i++ {
 			z01.PrintRune(inter)
 		}
-		z01.PrintRune(lastEdge)
+		z01.PrintRune(rightCorner)
 	}
 	z01.PrintRune('\n')
 }

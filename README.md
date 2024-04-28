@@ -2,8 +2,13 @@
 
 ## README.md
 
-### procédure de test:
+### UPDATE :
 
+`quad.go`: `firstEdge` and `lastEdge` replaced by `leftCorner` and `rightCorner` for more readability.
+
+`quad.go`: A condition have been added to filter better when `x`or `y` are null in order to display nothing.
+
+### procédure de test:
 
 `main.go :`
 
