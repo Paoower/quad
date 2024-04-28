@@ -120,10 +120,6 @@ si `y` = 3 combien de fois se répète `PrintIntermediateLine` ? pour `y` = 3 un
 
 `x` = 5 `edge` = '*' =====> `PrintIntermediateLine`
 
----------------------
-|                   |
----------------------
-
 ### ETAPE 5 :
 
 ```go
