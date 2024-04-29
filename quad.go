@@ -6,14 +6,15 @@ func QuadA(x, y int) {
 	// print first line
 	if x > 0 && y > 0 {
 		PrintLine(x, 'o', 'o', '-')
-	}
-	// print intermediate lines
-	for i := 0; i < y-2; i++ {
-		PrintIntermediateLine(x, '|')
-	}
-	// print last line
-	if y > 1 {
-		PrintLine(x, 'o', 'o', '-')
+
+		// print intermediate lines
+		for i := 0; i < y-2; i++ {
+			PrintIntermediateLine(x, '|')
+		}
+		// print last line
+		if y > 1 {
+			PrintLine(x, 'o', 'o', '-')
+		}
 	}
 }
 
@@ -21,14 +22,15 @@ func QuadB(x, y int) {
 	// print first line
 	if x > 0 && y > 0 {
 		PrintLine(x, '/', 92, '*')
-	}
-	// print intermediate lines
-	for i := 0; i < y-2; i++ {
-		PrintIntermediateLine(x, '*')
-	}
-	// print last line
-	if y > 1 {
-		PrintLine(x, 92, '/', '*')
+
+		// print intermediate lines
+		for i := 0; i < y-2; i++ {
+			PrintIntermediateLine(x, '*')
+		}
+		// print last line
+		if y > 1 {
+			PrintLine(x, 92, '/', '*')
+		}
 	}
 }
 
@@ -36,14 +38,15 @@ func QuadC(x, y int) {
 	// print first line
 	if x > 0 && y > 0 {
 		PrintLine(x, 'A', 'A', 'B')
-	}
-	// print intermediate lines
-	for i := 0; i < y-2; i++ {
-		PrintIntermediateLine(x, 'B')
-	}
-	// print last line
-	if y > 1 {
-		PrintLine(x, 'C', 'C', 'B')
+
+		// print intermediate lines
+		for i := 0; i < y-2; i++ {
+			PrintIntermediateLine(x, 'B')
+		}
+		// print last line
+		if y > 1 {
+			PrintLine(x, 'C', 'C', 'B')
+		}
 	}
 }
 
@@ -51,14 +54,15 @@ func QuadD(x, y int) {
 	// print first line
 	if x > 0 && y > 0 {
 		PrintLine(x, 'A', 'C', 'B')
-	}
-	// print intermediate lines
-	for i := 0; i < y-2; i++ {
-		PrintIntermediateLine(x, 'B')
-	}
-	// print last line
-	if y > 1 {
-		PrintLine(x, 'A', 'C', 'B')
+
+		// print intermediate lines
+		for i := 0; i < y-2; i++ {
+			PrintIntermediateLine(x, 'B')
+		}
+		// print last line
+		if y > 1 {
+			PrintLine(x, 'A', 'C', 'B')
+		}
 	}
 }
 
@@ -66,14 +70,15 @@ func QuadE(x, y int) {
 	// print first line
 	if x > 0 && y > 0 {
 		PrintLine(x, 'A', 'C', 'B')
-	}
-	// print intermediate lines
-	for i := 0; i < y-2; i++ {
-		PrintIntermediateLine(x, 'B')
-	}
-	// print last line
-	if y > 1 {
-		PrintLine(x, 'C', 'A', 'B')
+
+		// print intermediate lines
+		for i := 0; i < y-2; i++ {
+			PrintIntermediateLine(x, 'B')
+		}
+		// print last line
+		if y > 1 {
+			PrintLine(x, 'C', 'A', 'B')
+		}
 	}
 }
 
